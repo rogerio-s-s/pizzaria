@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("a moda.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header img {
+    max-width: 70%;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+
+}
+
+
+
+main {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    text-align: center;
+    margin-left: 50px;
+
+
+}
+
+main a {
+     text-decoration: none;
+     font-size: 20px;
+     color: white;
+     font-weight: 900;
+     
+}
+
+
+.info,
+.ver {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 12px;
+    background: red;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+
+
+
+}
+
+.horario {
+    margin-top: 30px;
+    text-align: center;
+
+
+}
+
+
+
+.linha {
+    background-color: #000;
+}
+
+.horario .semana {
+    font-size: 20px;
+    line-height: 2, 0;
+    color: white;
+    background: red;
+    border-radius: 10px;
+    margin: 5px;
+    
+    
+
+}
+
+footer {
+    font-size: 15px;
+    text-align: center;
+    background: red;
+    padding: 5px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 5px;
+    
+}
+

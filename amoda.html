@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa Bárbara Pizzaria</title>
+    <link rel="stylesheet" href="amoda.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="index.html" class="seta esquerda">
+            <i class="bx bxs-chevron-left"></i>
+        </a>
+
+        <span class="titulo">Pizzas</span>
+
+
+
+    </header>
+
+    <div class="cardapio">
+        <img src="a moda.png" alt="Pizza A Moda da casa">
+
+        <div class="info">
+            <h3>A Moda da Casa</h3>
+            <p>Calabresa, frango, milho, ervilha, cebola, catupiry, cheddar, mussarela, bacon, tomate, e orégano.
+            </p>
+        </div>
+
+        <div class="preco">
+
+            <div class="preco">G R$ 58,00</div>
+            <div class="preco">P 33.00</div>
+        </div>
+    </div>
+
+    <div class="finalizar">
+        <div class="qtd">Partes</div>
+        <div class="qtd">Qtd</div>
+
+
+        <div class="chek1">
+            <div class="chek"><input type="radio" name="partes">Grande</div>
+            <div class="chek"><input type="radio" name="partes">Pequena</div>
+            <div class="chek"><input type="radio" name="inter">Inteira</div>
+            <div class="chek"><input type="radio" name="inter">Meio-a-Meio</div>
+            <div class="total">Valor Total R$:</div>
+        </div>
+
+        <td>
+            <div class="qty">
+
+                <button>-</button>
+                <span>2</span>
+                <button>+</button>
+            </div>
+        </td>
+
+        
+    </div>
+
+    <form action="processar.php" method="POST">
+            <label for="obs">Observação:</label>
+            <textarea id="obs" name="observacao" placeholder=></textarea>
+           <button class="btn-fixo" type="submit">Enviar</button>
+        </form>
+
+        <label for="forma">Pagamento:</label>
+
+<select id="forma" name="pagamento">
+    <option value="">Selecione</option>
+    <option value="pix">Pix</option>
+    <option value="cartao">Cartão</option>
+    <option value="dinheiro">Dinheiro</option>
+</select>
+
+<label for="forma">Bordas:</label>
+
+<select id="forma" name="pagamento">
+    <option value="">Selecione</option>
+    <option value="pix">Quiejo</option>
+    <option value="cartao">Chocolate</option>
+    <option value="dinheiro">Catupiry</option>
+    <option value="dinheiro">cheddar</option>
+    <option value="dinheiro">cream cheese</option>
+</select>
+
+
+
+
+
+</body>
+
+</html>
