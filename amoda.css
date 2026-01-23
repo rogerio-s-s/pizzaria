@@ -159,12 +159,7 @@ body {
     font-size: 20px;
     cursor: pointer;
 
-    &:hover {
-        background: #e5f502;
-         
-       
-
-    }
+   
 }
 
 .total {
@@ -225,6 +220,10 @@ body {
 
 textarea {
     margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    min-width: 50%;
+    padding: 2px;
     
     
 }
@@ -232,6 +231,7 @@ textarea {
 label {
     font-size: 15px;
     font-weight: 900;
+    min-width: 100px;
     
 
 }
@@ -242,4 +242,25 @@ label {
     right: 20px;
     padding: 10px 20px;
     border-radius: 10px;
+    background: #ff9800;
+}
+
+.selecione {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+    width: 200px; 
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3px 0px 0px 5px;
+}
+
+select {
+    width: 200px;
+    padding: 6px;
+    border-radius: 5px;
 }

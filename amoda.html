@@ -13,7 +13,7 @@
 
     <header>
 
-        <a href="index.html" class="seta esquerda">
+        <a href="cardapio.html" class="seta esquerda">
             <i class="bx bxs-chevron-left"></i>
         </a>
 
@@ -61,35 +61,44 @@
             </div>
         </td>
 
-        
+
     </div>
 
+
     <form action="processar.php" method="POST">
-            <label for="obs">Observação:</label>
-            <textarea id="obs" name="observacao" placeholder=></textarea>
-           <button class="btn-fixo" type="submit">Enviar</button>
-        </form>
+        
+        <textarea id="obs" name="observacao" placeholder=>Observação</textarea>
+        <button class="btn-fixo" type="submit">Enviar</button>
+    </form>
 
-        <label for="forma">Pagamento:</label>
+    
 
-<select id="forma" name="pagamento">
-    <option value="">Selecione</option>
-    <option value="pix">Pix</option>
-    <option value="cartao">Cartão</option>
-    <option value="dinheiro">Dinheiro</option>
-</select>
 
-<label for="forma">Bordas:</label>
 
-<select id="forma" name="pagamento">
-    <option value="">Selecione</option>
-    <option value="pix">Quiejo</option>
-    <option value="cartao">Chocolate</option>
-    <option value="dinheiro">Catupiry</option>
-    <option value="dinheiro">cheddar</option>
-    <option value="dinheiro">cream cheese</option>
-</select>
+    <div class="selecione">
+        <div class="linha">
 
+        
+        <select id="forma" name="pagamento">
+            <option value="">Pagamento</option>
+            <option value="pix">Pix</option>
+            <option value="cartao">Cartão</option>
+            <option value="dinheiro">Dinheiro</option>
+        </select>
+        </div>
+
+        <div class="linha">
+       
+        <select id="forma" name="bordas">
+            <option value="">Bordas</option>
+            <option value="pix">Quiejo</option>
+            <option value="cartao">Chocolate</option>
+            <option value="dinheiro">Catupiry</option>
+            <option value="dinheiro">cheddar</option>
+            <option value="dinheiro">cream cheese</option>
+        </select>
+    </div>
+    </div>
 
 
 
