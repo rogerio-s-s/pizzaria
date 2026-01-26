@@ -37,6 +37,11 @@ body {
     
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* texto central */
 .info {
     flex: 1;

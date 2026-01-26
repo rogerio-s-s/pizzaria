@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="esfihasPedir.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+
+     <header>
+
+        <a href="esfihas.html" class="seta esquerda">
+            <i class="bx bxs-chevron-left"></i>
+        </a>
+
+        <span class="titulo">Pizzas</span>
+
+
+
+    </header>
+    <a href="esfihasCarne.html">
+
+    <div class="cardapio">
+        <img src="img esfihas/esfihas.jpeg" alt="esfihas">
+
+        <div class="info">
+            <h3>Esfihas 4,00</h3>
+           <ul>
+    <li>
+        Carne:
+        <input type="number" min="0" value="0" class="qtd" data-sabor="Carne">
+    </li>
+
+    <li>
+        Queijo e milho:
+        <input type="number" min="0" value="0" class="qtd" data-sabor="Queijo e milho">
+    </li>
+
+    <li>
+        Queijo e bacon:
+        <input type="number" min="0" value="0" class="qtd" data-sabor="Queijo e bacon">
+    </li>
+
+    <li>
+        Frango catupiry:
+        <input type="number" min="0" value="0" class="qtd" data-sabor="Frango catupiry">
+    </li>
+
+    <li>
+        Calabresa e queijo:
+        <input type="number" min="0" value="0" class="qtd" data-sabor="Calabresa e queijo">
+    </li>
+</ul>
+
+<button onclick="verPedido()">Ver pedido</button>
+            
+        </div>
+
+       
+    </div> </a>
+
+   
+
+
+    <form action="processar.php" method="POST">
+        
+        <textarea id="obs" name="observacao" placeholder=>Observação</textarea>
+        <button class="btn-fixo" type="submit">Enviar</button>
+    </form>
+
+    
+
+
+
+    <div class="selecione">
+        <div class="linha">
+
+        
+        <select id="forma" name="pagamento">
+            <option value="">Pagamento</option>
+            <option value="pix">Pix</option>
+            <option value="cartao">Cartão</option>
+            <option value="dinheiro">Dinheiro</option>
+        </select>
+        </div>
+
+      
+    </div>
+
+
+    
+</body>
+</html>
