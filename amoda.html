@@ -10,99 +10,116 @@
 </head>
 
 <body>
+    <form action="resumo.html">
 
-    <header>
+        <header>
 
-        <a href="cardapio.html" class="seta esquerda">
-            <i class="bx bxs-chevron-left"></i>
-        </a>
+            <a href="cardapio.html" class="seta esquerda">
+                <i class="bx bxs-chevron-left"></i>
+            </a>
 
-        <span class="titulo">Pizzas</span>
+            <span class="titulo">Pizzas</span>
 
 
 
-    </header>
+        </header>
 
-    <div class="cardapio">
-        <img src="a moda.png" alt="Pizza A Moda da casa">
+        <div class="cardapio">
+            <img src="a moda.png" alt="Pizza A Moda da casa">
 
-        <div class="info">
-            <h3>A Moda da Casa</h3>
-            <p>Calabresa, frango, milho, ervilha, cebola, catupiry, cheddar, mussarela, bacon, tomate, e orégano.
-            </p>
+            <div class="info">
+                <h3>A Moda da Casa</h3>
+                <p>Calabresa, frango, milho, ervilha, cebola, catupiry, cheddar, mussarela, bacon, tomate, e orégano.
+                </p>
+            </div>
         </div>
 
-        <div class="preco">
 
-            <div class="preco">G R$ 60,00</div>
-            <div class="preco">P 33.00</div>
-        </div>
-    </div>
-
-    <div class="finalizar">
-        <div class="qtd">Partes</div>
-        <div class="qtd">Qtd</div>
+        <div class="finalizar">
+            <div class="qtd">Partes</div>
+            <div class="qtd">Qtd</div>
 
 
-        <div class="chek1">
-            <div class="chek"><input type="radio" name="partes">Grande</div>
-            <div class="chek"><input type="radio" name="partes">Pequena</div>
-            <div class="chek"><input type="radio" name="inter">Inteira</div>
-            <div class="chek"><input type="radio" name="inter">Meio-a-Meio</div>
-            <div class="total">Valor Total R$:</div>
-        </div>
+            <div class="chek1">
+                <div class="chek">
 
-        <td>
+                    
+
+                    <input type="radio" name="sabor" value="A Moda da Casa - Grande " data-preco="60"> G R$ 60,00
+                </div>
+
+                <div class="chek">
+                    <input type="radio" name="sabor" value="Pequena - A Moda da Casa" data-preco="33"> P R$ 33,00
+                </div>
+
+                <div class="chek">
+                    <input type="radio" name="tipo" value="inteira"> Inteira
+                </div>
+
+                <div class="chek">
+                    <input type="radio" name="tipo" value="meio a meio"> Meio-a-Meio
+                </div>
+            </div>
+
+
+
+
+
+
+
+
             <div class="qty">
 
-                <button>-</button>
-                <span>2</span>
-                <button>+</button>
+                <input type="number" name="quantidade" value="1" min="1">
+
             </div>
-        </td>
-
-
-    </div>
-
-
-    <form action="processar.php" method="POST">
-        
-        <textarea id="obs" name="observacao" placeholder=>Observação</textarea>
-        <button class="btn-fixo" type="submit">Enviar</button>
-    </form>
-
-    
-
-
-
-    <div class="selecione">
-        <div class="linha">
-
-        
-        <select id="forma" name="pagamento">
-            <option value="">Pagamento</option>
-            <option value="pix">Pix</option>
-            <option value="cartao">Cartão</option>
-            <option value="dinheiro">Dinheiro</option>
-        </select>
         </div>
 
-        <div class="linha">
-       
-        <select id="forma" name="bordas">
-            <option value="">Bordas</option>
-            <option value="pix">Queijo</option>
-            <option value="cartao">Chocolate</option>
-            <option value="dinheiro">Catupiry</option>
-            <option value="dinheiro">cheddar</option>
-            <option value="dinheiro">cream cheese</option>
-        </select>
-    </div>
-    </div>
+
+
+        </div>
 
 
 
 
+        <textarea name="observacao" placeholder="Observação"></textarea>
+
+        <button class="btn-fixo" type="submit">Enviar</button>
+
+
+
+
+
+
+        <div class="selecione">
+            <div class="linha">
+
+
+                <select id="padamentos" name="pagamento">
+                    <option value="">Pagamento</option>
+                    <option value="pix">Pix</option>
+                    <option value="cartao">Cartão</option>
+                    <option value="dinheiro">Dinheiro</option>
+                </select>
+            </div>
+
+            <div class="linha">
+
+                <select id="bordas" name="bordas">
+                    <option value="">Bordas</option>
+                    <option value="queijo 12.00">Queijo R$ 12.00</option>
+                    <option value="chocolate">Chocolate R$ 10.00</option>
+                    <option value="catupiry">Catupiry R$ 7.00</option>
+                    <option value="cheddar">cheddar R$ 7.00</option>
+                    <option value="cream cheese">cream cheese R$ 10.00</option>
+                    <option value="cream cheese c/ frango">cream cheese c/ frango R$ 15.00</option>
+                </select>
+            </div>
+        </div>
+
+
+
+    </form>
 </body>
 
 </html>

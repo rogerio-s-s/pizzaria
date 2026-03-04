@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body {
+
+        background-color: red;
+
+
+    }
+
+    h1 {
+        color: white;
+    text-align: center;
+    }
+
+    p {
+         color: white;
+         font-size: 20px;
+         font-weight: 700;
+    }
+
+    button {
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 50%;
+        margin-left: 35%;
+    }
+</style>
+
+<body>
+    <h1>Resumo do Pedido 🍕</h1>
+
+<p><strong>Sabor:</strong> <span id="sabor"></span></p>
+<p><strong>Tipo:</strong> <span id="tipo"></span></p>
+<p><strong>Quantidade:</strong> <span id="quantidade"></span></p>
+<p><strong>Preço Unitário:</strong> R$ <span id="precoUnitario"></span></p>
+<p><strong>Pagamento:</strong> <span id="pagamento"></span></p>
+<p><strong>Borda:</strong> <span id="bordas"></span></p>
+<p><strong>Total:</strong> R$ <span id="total"></span></p>
+<p><strong>Observação:</strong> <span id="observacao"></span></p>
+
+<button>Enviar pedido</button>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+
+    const sabor = params.get("sabor");
+    const tipo = params.get("tipo");
+    const quantidade = Number(params.get("quantidade"));
+    const pagamento = params.get("pagamento");
+    const bordas = params.get("bordas");
+    const observacao = params.get("observacao");
+
+    // Pegando o preço do sabor da pizza
+    let precoUnitario = 0;
+if (sabor.includes("Grande")) precoUnitario = 60;
+if (sabor.includes("Pequena")) precoUnitario = 33;
+
+// PREÇO DA BORDA
+let precoBorda = 0;
+
+if (bordas === "queijo 12.00") precoBorda = 12;
+if (bordas === "chocolate") precoBorda = 10;
+if (bordas === "catupiry") precoBorda = 7;
+if (bordas === "cheddar") precoBorda = 7;
+if (bordas === "cream cheese") precoBorda = 10;
+if (bordas === "cream cheese c/ frango") precoBorda = 15;
+
+// TOTAL CORRETO
+const total = (precoUnitario * quantidade) + precoBorda;
+
+
+    
+
+    document.getElementById("sabor").textContent = sabor;
+    document.getElementById("tipo").textContent = tipo;
+    document.getElementById("quantidade").textContent = quantidade;
+    document.getElementById("precoUnitario").textContent = precoUnitario.toFixed(2);
+    document.getElementById("total").textContent = total.toFixed(2);
+    document.getElementById("pagamento").textContent = pagamento;
+    document.getElementById("bordas").textContent = bordas;
+    document.getElementById("observacao").textContent = observacao;
+    </script>
+
+</body>
+
+</html>
